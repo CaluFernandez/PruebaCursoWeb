@@ -1,0 +1,283 @@
+
+* {
+	padding: 0; margin: 0;
+	}
+
+/* fonts */
+h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+}
+
+button, label, legend, nav, p {
+	font-family: 'Nunito', sans-serif;
+}
+
+body {
+	background-color:#fff9f3;
+}
+
+p {
+	color:#2c435b;
+}
+
+header {
+	background-color: #2c435b;
+	padding: 4% 4% 0% 4%;
+	text-align: center;
+}
+
+footer {
+	background-color:#deC3C3; 
+	color:#2c435b;
+	text-align: center;
+	text-transform: lowercase;
+	letter-spacing: 5px;
+	padding:5%;
+}
+
+main {
+	background-image: linear-gradient(to right, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+
+/* flexbox */
+
+footer{ 
+	display:flex; 
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+
+
+/* back image */
+.homeContacto{
+	background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/dot-grid.png);
+	background-repeat: repeat-x repeat-y;
+}
+
+
+/* Secciones del home landing */
+
+.homePortfolio {
+	text-align:center;
+	padding: 40px;
+}
+
+.homeInfo {
+	background-color: #e3eeff;
+	text-align:center;
+	padding: 40px;
+}
+
+.homeContacto {
+	text-align:center;
+	color: #638181;
+	padding: 40px 40px 80px 40px;
+}
+
+.perfil {
+	display: inline-block;
+	margin: 2%;
+}
+
+.homeContacto h4 {
+	margin-top:10%;
+	margin-bottom: 3%;
+}
+
+
+.elementoPortfolioHome{
+	text-align: left;
+	padding:2%;
+}
+
+.elementoPortfolioHome img{
+	width: 100%;
+}
+
+
+.proyectosPortfolio {
+	margin:1% 6%;
+}
+
+
+/* Titulos y textos */
+
+.tituloPrincipal {
+	font-size:30px;
+	color:#ffffff; 
+	letter-spacing: 10px;
+	text-align: left;
+	margin:10px;
+}
+
+.tituloLight{
+	font-weight: lighter;
+	display: inline-block;
+}
+
+.titulosHome {
+	color:#2c435b;
+	margin: 30px 10px 10px 10px;
+	text-align: center;
+}
+
+.tituloProyectoHome{
+	color:#638181;
+}
+
+.copete, .about {
+	margin:0% 20%;
+	text-align: center;
+}
+
+
+
+/* botones */
+button, .boton {
+	display:inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	color: #2c435b;
+	border:none;
+	padding: 10px;
+	margin: 10px;
+	background-color:#deC3C3;
+	text-decoration: none;
+}
+
+
+/* extras */ 
+
+article p strong { 
+	color:#c68368; 
+}
+
+.inputForm {
+	margin-top: 4%;
+}
+
+.inputForm input{
+	color:#2c435b;
+}
+
+legend {
+	color:#deC3C3;
+}
+
+
+
+/* Nav Bar */
+
+nav {
+	margin-top: 3%;
+}
+
+.nav-link {
+	color:#deC3C3;
+	background-color:#2c435b;
+}
+
+.nav-link:hover{
+	color:#2c435b;
+	background-color:#deC3C3;
+}
+
+.nav-item .active{
+	background-color:#deC3C3; 
+	border:1px, #ffffff;
+	color:#2c435b;
+}
+
+
+
+
+/* Elementos con transiciones / animaciones */
+
+.elementoPortfolioHome:hover {
+	transform: scale(1.2);
+	transition:1s;
+}
+
+button:hover {
+	color:#ffffff;
+	background-color: #2c435b;
+	transform:scale(1.1);
+	transition:0.2s;
+}
+
+header:hover {
+	background-color: #faaca8;
+	transition:0.1s;
+}
+
+.banner {
+	width:100%;
+	height:200px;
+	transition: height 2s;
+}
+
+.banner:hover {
+	height:350px;
+}
+
+
+h1 {
+	animation-duration: 4s;
+	animation-name: aparecer;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes aparecer {
+	0%{opacity:0;}
+	25%{opacity:1; color:#ffffff;}
+	75%{opacity:1; color:#deC3C3;}
+	100%{opacity:0;}
+}
+
+.perfil {
+	animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+/* flexbox
+
+
+footer{ 
+	display:flex; 
+	flex:wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+/* grids para sección de info + contacto
+
+.infoAndContact {
+	display:grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+
+/* grids para galeria de portfolio
+
+.proyectosPortfolio {
+	display:grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	margin: 3% 10%;
+} */
+
+
+
